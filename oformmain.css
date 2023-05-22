@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.line1{
+    display: flex;
+}
+
+.line1 .input4{
+    padding-left: 55px;
+}
+
+.line4 .inputd{
+    padding-left: 55px;
+}
+
+.line2{
+    display: flex;
+}
+
+.line2 .input7{
+    padding-left: 95px;
+}
+
+.line3{
+    display: flex;
+}
+
+.line3 .input9{
+    padding-left: 55px;
+}
+
+.inputa{
+    display: flex;
+}
+
+.inputa ul{
+    list-style: none;
+}
+
+.line4{
+    display: flex;
+}
+.container{
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    /* background-color: white; */
+    background-color: #caf6bf;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+fieldset{
+    width: 50%;
+    background-color: white;
+    border: 4px solid green;
+    border-radius: 24px;
+    padding: 5%;
+    /* background: linear-gradient(#9ef9d8, #caf6bf, #caf6bf); */
+
+    
+}
+
+legend h3{
+    color: darkgreen;
+    font-size: larger;
+}
+
+label{
+    font-size: larger;
+    color: black;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="number"], textarea, input[type="date"], select, input[type="file"]{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    /* border: 4px solid #caf6bf; */
+    color: green;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+
+    /* border: 15px rgba(orangered, lightsalmon, white, white); */
+    border-radius: 15px;
+    transition: 0.25px;
+    border: 3px solid #caf6bf;
+    box-shadow: 0 0 20px #caf6bf;
+
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus, input[type="date"]:focus, select:focus, input[type="file"]:focus{
+    background-color: #caf6bf;
+    border: 3px solid green;
+}
+
+
+input[type="radio"]{
+    width: 20px;
+    height: 50px;
+}
+input[type="radio"]:focus{
+    box-shadow: 0 0 20px #caf6bf;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 20px #caf6bf;
+}
+
+input[type="text"]:hover, input[type="number"]:hover, textarea:hover, input[type="date"]:hover, select:hover, input[type="file"]:hover{
+    box-shadow: 0 0 10px green;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 50px;
+}
+
+input[type="checkbox"]:focus{
+    box-shadow: 0 0 20px #caf6bf;
+}
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 20px #caf6bf;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid green;
+    background-color: white;
+    font-size: large;
+}
+button:hover{
+    background-color: green;
+    border: 3px solid green;
+
+}
+.submit{
+    background-color: yellowgreen;
+    border: 3px solid yellowgreen;
+
+}
+

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money receipt</title>
+    <link rel="stylesheet" href="money receipt.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend align="center">Money Receipt</legend>
+            <div class="card1">.</div><br>
+            <div class="card2">
+                <div class="item1">
+                    House Rent Receipt
+                </div>
+
+                <div class="item2">
+                   Dated: <!--date fetch--><span id="info1"></span> TO  <span id="info2"></span>
+                </div>
+            </div><br>
+
+            <h5>This is acknowledge the receipt from <!--roomer name--><span id="info3"></span> the sum of RS.<span id="info4"></span>
+                toward rent payment for the period from  <!--starting date fetch--> <br> <span id="info7"></span>
+                to <!--end date fetch--> <span id="info8"></span>, towards the property bearing the address " <!--address--> <span id="info5"></span>" 
+            </h5><br>
+
+            <div class="card3">
+                <div class="item3">
+                    Landlord Details <br><br>
+                  <!--landlord name--><span id="info6"></span>
+                </div>
+
+                <div class="item4">
+                    Signature<br><br>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    
+    <script>
+        ScrollReveal({ 
+            reset: true ,
+            distance: '60px',
+            duration: 2500,
+            delay: 500
+        });
+        
+        ScrollReveal().reveal('fieldset',  { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.card1', '.card2',  { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal(',container .h5',  { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.card3',  { delay: 500, origin: 'right' });
+        
+        
+    </script>
+    <script src="MoneyReceipt.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cpsign.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    
+
+   <form class="card2" action="cpsign.php" method="post" onsubmit="return signup()" >
+    <div class="back"><a href="landing.html">Home</a></div>
+    <label><h1>Create Account</h1></label>
+    <div class="p"> Please fill the input below here </div><br><br><br>
+    <img src="pro.png" alt="pro" width="40px" ; height="40px"> 
+
+    <input type="text" name="text" placeholder="FULL NAME" id="fulln"><br>
+    <span id="full" style="color:red;"></span><br>
+    <img src="mail.png" alt="mail" width="40px" ; height="40px">
+
+    <input type="text" name="email" placeholder="EMAIL" id="mail"><br>
+    <span id="user" style="color:red;"></span><br>
+    <img src="password.png" alt="password" width="40px" ; height="40px"> 
+    
+    <input type="password" name="password" placeholder="PASSWORD"  id="pas"><br>
+    <span id="pass" style="color:red;"></span><br>
+    <img src="password.png" alt="pass" width="40px" ; height="40px">
+     
+    <input type="password" name="pass" placeholder="CONFIRM PASSWORD"  id="cpassword">
+     <span id="cpas" style="color:red;"></span><br>
+    <input type="submit" name="submit" value="SIGN UP" ><br><br>
+    Already have a account? <a href="cp.html">Log In</a>
+   </form> 
+  
+   <!-- <script>
+    ScrollReveal({ 
+     reset: true ,
+     distance: '60px',
+     duration: 2500,
+     delay: 500
+ });
+
+ ScrollReveal().reveal('.card2',  { delay: 500, origin: 'bottom' });
+ ScrollReveal().reveal('.back',  { delay: 500, origin: 'left' });
+ ScrollReveal().reveal('.card2 .h1', '.card2 p',  { delay: 500, origin: 'left' });
+ ScrollReveal().reveal('input',  { delay: 500, origin: 'right' });
+ ScrollReveal().reveal('.card2 img',  { delay: 500, origin: 'bottom' });
+ </script>
+ <script>
+    function signup(){
+        var full=document.getElementById("fulln").value;
+        if(full==""){
+            document.getElementById('full').innerHTML="***Please fill this field***";
+            return false;
+        }
+        else{
+            document.getElementById('full').innerHTML="";
+            // return false;
+        }
+
+        var email=document.getElementById("mail").value;
+        if(email==""){
+            document.getElementById('user').innerHTML="***Please fill this field***";
+            return false;
+        }
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(!mailformat.test(email)){
+            // document.getElementById('user').innerHTML="";
+            document.getElementById('user').innerHTML="***Please fill valid email address***";
+            return false;
+        }
+        else{
+             document.getElementById('user').innerHTML="";
+        }
+
+        var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s)/;
+        var pass=document.getElementById("pas").value;
+        if(pass==""){
+            document.getElementById('pass').innerHTML="***Please fill this field***";
+            return false;
+        }
+        if(!decimal.test(pass)){
+            document.getElementById('pass').innerHTML="***password should contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character";
+            return false;
+        }
+        if(pass.length<6){
+            document.getElementById('pass').innerHTML="***Please enter atleast 6 chracters***";
+            return false;
+        }
+        else{
+             document.getElementById('pass').innerHTML="";
+        }
+
+
+         var cpass=document.getElementById("cpassword").value;
+
+         if(cpass==""){
+            document.getElementById('cpas').innerHTML="***Please fill this field***";
+            return false;
+        }
+         
+         if(pass != cpass){
+            document.getElementById('cpas').innerHTML="***Passwords do not match***";
+            return false;
+         }
+         else{
+             document.getElementById('cpas').innerHTML="";
+        }
+
+    }
+
+ </script> -->
+</body>
+</html> 

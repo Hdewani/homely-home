@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="item1">
+               <a href="rentroom.html"> <img src="housegif.gif" alt="ownergirl" > </a>
+            </div>
+
+            <div class="item2">
+             <a href="getroom.html">  <img src="roomgif.gif" alt="roomer"> </a>
+            </div>
+
+            <div class="item3">
+             <a href="mate.html">  <img src="roommatetry2.gif" alt="roommate"> </a>
+            </div>
+        </div>
+        <div class="grid2">
+            <div class="item4">
+                <a href="rentroom.html">  OWNER </a>
+            </div>
+            <div class="item5">
+                <a href="getroom.html">  ROOMER </a>
+            </div> 
+            <div class="item6">
+                <a href="mate.html">    ROOMMATE </a>
+            </div> 
+        </div>
+    </div>
+    <script>
+       ScrollReveal({ 
+        reset: true ,
+        distance: '60px',
+        duration: 2500,
+        delay: 500
+    });
+
+    ScrollReveal().reveal('.grid', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.item4', { delay: 600, origin: 'bottom' });
+    ScrollReveal().reveal('.item5', { delay: 600, origin: 'bottom' });
+    ScrollReveal().reveal('.item6', { delay: 600, origin: 'bottom' });
+
+    </script>
+</body>
+</html>

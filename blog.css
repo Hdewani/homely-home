@@ -1,0 +1,131 @@
+.p{
+    /* position: absolute; */
+    display: block;
+    /* height: 50%; */
+    width: 80%;
+    font-size: x-large;
+    left: 20px;
+    /* background-color: yellowgreen; */
+
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 400px ;
+    align-content: center;
+    align-items: center;
+    justify-content: right;
+}
+.img img{
+    height: 300px;
+}
+.a{
+    color: green;
+}
+.b{
+    color: green;
+    font-size: 45px;
+    margin-left: 100px;
+}
+.c{
+    color: green;
+    font-size: 25px;
+    margin-left: 100px;
+    /* justify-content: left; */
+}
+.d{
+    color: green;
+    font-size: 45px;
+    margin-left: 100px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: 380px 300px;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* align-content: center; */
+    margin-left: 200px;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    /* color: red; */
+    font-size: x-large;
+}
+.grid2 img{
+    height: 350px;
+    width: 450px;
+}
+#main5{
+    width: 100%;
+    color: black;
+    display: grid;
+    grid-template-rows:  430px 50px;
+    place-items: center;
+}
+.i{
+    text-align: center;
+    place-items: center;
+}
+#i{
+    font-size: 30px;
+}
+.j{
+    display: grid;
+    grid-template-rows:  314px;
+    grid-template-columns: repeat(4,343px);
+    align-items: center;
+    column-gap: 20px;
+}
+.j img{
+    height: 314px;
+    width: 323px;
+    border-radius: 20px;
+}
+.k{
+    display: grid;
+    grid-template-rows:  50px;
+    grid-template-columns: 343px 343px 343px 343px;
+    align-items: center;
+    column-gap: 10px;
+    text-align: center;
+}
+.bvss{
+    font-size: xx-large;
+    color: lightseagreen;
+}
+.bvs{
+    font-size: x-large;
+}
+.touch{
+    font-size: x-large;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    height: 200px;
+    margin-left: 300px;
+    align-items: center;
+}
+.i{
+    height: 20px;
+    width: 150px;
+    border-radius: 10px;
+}
+#button{
+    /* justify-content: center; */
+    color: green;
+    /* align-items: center; */
+    margin-left: 40%;
+    height: 40px;
+    width: 180px;
+    background-color: white;
+    transition: 0.3s;
+    border: none;
+    font-size: x-large;
+}
+#button:hover{
+    background-color: green;
+    color: white;
+    /* border: ; */
+    border-radius: 10px;
+}

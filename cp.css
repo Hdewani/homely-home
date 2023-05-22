@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #caf6bf;
+}
+
+.card1{
+    padding: 50px;
+    margin: 150px;
+    margin-top: 60px;
+    margin-left: 550px;
+    width: 350px;
+    height: 530px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.p{
+    color: #494848
+    
+}
+.card1 input[type="text"], input[type="password"]{
+    padding: 14px 40px;
+    border: 2px;
+    font-size: large;
+    
+}
+.card1 input[type="submit"]{
+    padding: 3px 30px;
+    background-color: red;
+    color: white;
+    font-size: large;
+}
+
+.card1 input[type="submit"]:hover{
+    background-color: green;
+}
+
+.card1 a{
+    text-decoration: none;
+    color: red;
+}

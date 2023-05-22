@@ -1,0 +1,404 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room form</title>
+    <link rel="stylesheet" href="room form.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend align="center">
+                <h3> * If you are looking for a room/flat/pg fill the following details: </h3>
+            </legend>
+            <form name="myform" action="roomform.php" method="post" onsubmit="return validation()">
+                <div class="input1">
+                    <label for="name">Roomer Name</label>
+                    <br>
+                    <input type="text" id="name" name="name"><br>
+                    <span id="flatname" style="color:red"></span>
+                </div><br><br>
+
+                <div class="input2">
+                    <label for="location">Where do you want a room</label>
+                    <input type="text" id="location" name="location"><br>
+                    <span id="flatlocation" style="color:red"></span>
+                </div><br><br>
+
+                <div class="line1">
+
+                    <div class="input3">
+                        <label for="rent">Approx Rent</label>
+                        <input type="text" id="rent" name="rent"><br><br>
+
+                        <span id="renthead" style="color:red"></span>
+
+                    </div>
+
+                    <div class="input4">
+                        Meal
+                        <input type="radio" name="meal" value="yes" class="radio" id="yes">Yes
+                        <input type="radio" name="meal" value="no" class="radio" id="no">No
+                        <br>
+                        <span id="meals" style="color:red"></span>
+                    </div>
+                </div><br>
+
+                <div class="line2">
+                    <div class="input6">
+                        <label for="bhk">BHK</label>
+                        <input type="text" id="bhk" name="bhk"><br>
+                        <span id="bhkk" style="color:red"></span>
+                    </div>
+
+                    <div class="input7">
+                        <label for="date">Shift from</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div><br><br>
+
+                <div class="line3">
+                    <div class="input8">
+                        <label>Subtype</label>
+                        <select  id="roomy" name="roomtype">
+                            <option value="">None</option>
+                            <option value="PG">PG</option>
+                            <option value="Hostel">Hostel</option>
+                            <option  value="Flat"> Flat</option>
+
+                        </select>
+                        <br>
+                        <span id="room" style="color:red"></span>
+                    </div>
+
+                    <div class="input9">
+                        <label>Furnishing</label>
+                            <select name="furniture"  id="furny">
+                                <option value="">None</option>
+                                <option value="Furnished">Furnished</option>
+                                <option value="Semi-Furnished">Semi-Furnished</option>
+                                <option value="Non-Furnished">Non-Furnished</option>
+                            </select>
+                            
+                            <br>
+                            <span id="furn" style="color:red"></span>
+                    </div>
+                </div><br><br>
+
+                <div class="line4">
+                    <div class="inpute">
+                        <label>Occupancy</label>
+                        <select  id="occy" name="accupancy">
+                            <option value="">None</option>
+                            <option value="single"> SINGLE</option>
+                            <option value="shared">SHARED</option>
+                            <option value="any">ANY</option>
+                        </select>
+                        <br>
+                        <span id="occ" style="color:red"></span>
+                    </div>
+
+                    <div class="inputf">
+                        <label>Looking For</label>
+                        <select  id="geny" name="gender">
+                            <option value="">None</option>
+                            <option value="male">MALE</option>
+                            <option value="female">FEMALE</option>
+                            <option value="any">ANY</option>
+
+                        </select>
+                        <br>
+        <span id="gen" style="color:red"></span>
+    </div>
+ </div><br><br>
+<div class="inputa">
+    <label for="amenities">Amenities : </label>
+     <ul>
+        <li> <input type="checkbox" id="amenities" name="amenities[]" value="TV">TV</li>
+         <li> <input type="checkbox" id="amenities" name="amenities[]" value="AC">AC </li>
+        <li> <input type="checkbox" id="amenities" name="amenities[]" value="Wifi">WIFI </li>
+    </ul>
+    <ul>
+         <li> <input type="checkbox" id="amenities" name="amenities[]" value="Kitchen">KITCHEN </li>
+        <li><input type="checkbox" id="amenities" name="amenities[]" value="Fridge">FRIDGE </li>
+        <li> <input type="checkbox" id="amenities" name="amenities[]" value="Waching Machine">WASHING</li>
+     </ul>
+     <ul>
+        <li><input type="checkbox" id="amenities" name="amenities[]" value="Parking">PARKING </li>
+                        <li> <input type="checkbox" id="amenities" name="amenities[]" value="CCTV">CCTV </li>
+                        <li> <input type="checkbox" id="amenities" name="amenities[]" value="Lift">LIFT </li>
+                    </ul>
+                </div><br><br>
+
+                <div class="inputc">
+                    <label for="description">Add description here</label>
+                    <Textarea name="b" rows="4" cols="50" id="description" value="description"></Textarea>
+                </div><br><br>
+
+                <button type="submit" class="submit">Submit</button>
+                <button type="submit">Back</button>
+
+
+            </form>
+        </fieldset>
+    </div>
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 500
+        });
+
+        ScrollReveal().reveal('.input1', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.input2', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.line1', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.line2', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.line3', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.line4', { delay: 500, origin: 'bottom' });
+        //  ScrollReveal().reveal('.input9',  { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.inputa', { delay: 500, origin: 'bottom' });
+
+
+        ScrollReveal().reveal('.inputc', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.inputd', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('fieldset', { delay: 500, origin: 'left' });
+
+        ScrollReveal().reveal('.container  h3', { delay: 700, origin: 'top' });
+        ScrollReveal().reveal('.container button', { delay: 800, origin: 'bottom' });
+
+
+    </script>
+    <script>
+        function validation() {
+            var user = document.getElementById('name').value;
+            if (user == "") {
+                document.getElementById('flatname').innerHTML = "*please fill this field*";
+                return false;
+            }
+            if ((user.length <= 2) || (user.length > 30)) {
+                document.getElementById('flatname').innerHTML = "*length of flatname should be more than 2 chracters*";
+                return false;
+            }
+            if (/[`!@#$%^&*()+\=\[\]{};':"\\| .<>\/?~]/.test(user)) {
+                document.getElementById('flatname').innerHTML = "*no alphanumeric chracters and spaces  are allowed in flatname**";
+                return false;
+            }
+            else {
+                document.getElementById('flatname').innerHTML = "";
+            }
+
+
+
+            var loc = document.getElementById('location').value;
+            if (loc == "") {
+                document.getElementById('flatlocation').innerHTML = "*please fill this field*";
+                return false;
+            }
+            if ((loc.length <= 2) || (loc.length > 30)) {
+                document.getElementById('flatlocation').innerHTML = "**please fill this field";
+                return false;
+            }
+            if (/[`!@#$%^&*()+\=\[\]{};':"\\|.<>\/?~]/.test(loc)) {
+                document.getElementById('flatlocation').innerHTML = "*no alphanumeric chracters and spaces  are allowed in flatname**";
+                return false;
+            }
+            else {
+                document.getElementById('flatlocation').innerHTML = "";
+            }
+
+
+
+            var charge = document.getElementById('rent').value;
+
+            //  if(charge<=999 || charge>100000){
+            //     document.getElementById('renthead').innerHTML="** please enter between 1000 to 100000";
+            //     return false;
+
+            // }
+            if (charge == "") {
+                document.getElementById('renthead').innerHTML = "*please fill this field*";
+                return false;
+            }
+            if ((charge <= 999) || (charge >= 100001)) {
+                document.getElementById('renthead').innerHTML = "*please enter between 1000 to 100000*";
+                return false;
+            }
+            if (/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(charge)) {
+                document.getElementById('renthead').innerHTML = "*no alphanumeric chracters and spaces are allowed**";
+                return false;
+            }
+            if (isNaN(charge)) {
+                document.getElementById('renthead').innerHTML = "*only numbers are allowed**";
+                return false;
+            }
+            else {
+                document.getElementById('renthead').innerHTML = "";
+            }
+
+
+
+
+
+            // var bath=document.getElementById("bathroom").value;
+            // if(bath==""){
+            //     document.getElementById('bath').innerHTML="**please enter the no.of bathrooms required";
+            //     return  false;
+            // }
+            // if((bath<=0) || (bath>=10)){
+            //     document.getElementById('bath').innerHTML="*please enter below 10 number of bathrooms*";
+            //     return false;
+            // }
+            // if(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(bath)){
+            //     document.getElementById('bath').innerHTML="*no alphanumeric chracters and spaces are allowed**";
+            //     return false;
+            // }
+            // if(isNaN(bath)){
+            //     document.getElementById('bath').innerHTML="*only numbers are allowed**";
+            //     return false;
+            // }
+            // else{
+            //     document.getElementById('bath').innerHTML="";
+            // }
+
+
+
+
+            var bhk = document.getElementById("bhk").value;
+            if (bhk == "") {
+                document.getElementById('bhkk').innerHTML = "**please enter a input";
+                return false;
+            }
+            if ((bhk <= 0) || (bhk >= 6)) {
+                document.getElementById('bhkk').innerHTML = "*please enter below 6 number of BHK's*";
+                return false;
+            }
+            if (/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(bhk)) {
+                document.getElementById('bhkk').innerHTML = "*no alphanumeric chracters and spaces are allowed**";
+                return false;
+            }
+            if (isNaN(bhk)) {
+                document.getElementById('bhkk').innerHTML = "*only numbers are allowed**";
+                return false;
+            }
+            else {
+                document.getElementById('bhkk').innerHTML = "";
+            }
+
+
+            const yes = document.querySelector('#yes');
+            const no = document.querySelector('#no');
+            if (yes.checked || no.checked) {
+
+                document.getElementById('meals').innerHTML = "";
+            }
+            else {
+                // document.getElementById('meals').innerHTML=""
+                document.getElementById('meals').innerHTML = "*please select any input**";
+                return false;
+
+
+            }
+
+
+            // var roomy = document.getElementById("roomy");
+            // var room = roomy.options[roomy.selectedIndex].value;
+            // var room1=roomy.options[roomy.selectedIndex].text;
+            // if(room1 == "None"){
+            //     document.getElementById('room').innerHTML="*please select any input**";
+            //     return false;
+            // }
+            // else
+            // {
+            //     document.getElementById('room').innerHTML="";
+            // }
+            // if(document.getElementById('roomy').selectedIndex == 0)
+            //    {
+            //          document.getElementById('room').innerHTML="*please select any input**";
+            //           return false;
+            //    }
+            //    else{
+            //     document.getElementById('room').innerHTML="";
+            //    }
+
+
+
+
+            // var furn = roomy.options[roomy.selectedIndex].value;
+
+            var room = document.getElementById("roomy").value;
+            if (room == "") {
+                document.querySelector('#room').innerHTML = "*please select any input**";
+                // alert("please select any value in Furnishing");
+                return false;
+            }
+            else {
+                document.getElementById('room').innerHTML = "";
+            }
+
+            var furn = document.getElementById("furny").value;
+            if (furn == "") {
+                document.getElementById('furn').innerHTML = "*please select any input**";
+                // alert("please select any value in SubType");
+                return false;
+            }
+            else {
+                document.getElementById('furn').innerHTML = "";
+            }
+
+
+            var occ = document.getElementById('occy').value;
+            if (occ == "") {
+                document.querySelector('#occ').innerHTML = "*please select any input**";
+                // alert("please select any value in Occupancy");
+                return false;
+            }
+            else {
+                document.getElementById('occ').innerHTML = "";
+            }
+
+            var gen = document.getElementById("geny").value;
+            if (gen == "") {
+                document.querySelector('#gen').innerHTML = "*please select any input**";
+                // alert("please select any value in Gender");
+                return false;
+            }
+            else {
+                document.getElementById('gen').innerHTML = "";
+            }
+
+
+
+
+            // var roomy = document.getElementById("roomy").value;
+            // if(roomy==None){
+            //     document.getElementById('room').innerHTML="*please select any input**";
+            // }
+            // else
+            // {
+            //     document.getElementById('room').innerHTML="";
+            // }
+
+
+            // var furny = document.getElementById("furny").value;
+            // if(roomy==None){
+            //     document.getElementById('furn').innerHTML="*please select any input**";
+            // }
+            // else
+            // {
+            //     document.getElementById('furn').innerHTML="";
+            // }
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rentalagreement.css">
+</head>
+<body>
+    <script src="rentalagreement.js"></script>
+    <div class="box"></div>
+    <p id="g">RENTAL AGREEMENT</p>
+    <div class="container">
+        <div class="inputs one">
+            <b class="r">Owner name</b><br>
+            <input type="text"  autocomplete="off" id="landlord" required>
+        </div>
+        <div class="inputs two">
+            <b class="r">Owner number</b><br>
+            <input type="tel"  autocomplete="off" required>
+        </div>
+        <div class="inputs three">
+            <b class="r">Owner address</b><br>
+            <input type="text" placeholder="Enter owner's full address with pincode" id="Landlord_add" autocomplete="off" required>
+        </div>
+        <div class="inputs four">
+            <b class="r">Tenant name</b><br>
+            <input type="text"  autocomplete="off" id="buyer">
+        </div>
+        <div class="inputs five">
+            <b class="r">  Tenant number</b><br>
+            <input type="tel"  autocomplete="off" required>
+        </div>
+        <div class="inputs six">
+            <b class="r">Tenant email</b><br>
+            <input type="email"  autocomplete="off" required>
+        </div>
+        <div class="inputs seven">
+            <b class="r">Property Location</b><br>
+            <input type="text"  autocomplete="off" required id="city">
+        </div>
+        <div class="inputs Eight">
+            <b class="r">Agreement start date</b><br>
+            <input type="date"  autocomplete="off" required  id="agree_sdate">
+        </div>
+        <div class="inputs nine">
+            <b class="r">Agreement validity</b><br>
+            <input type="number" autocomplete="off" id="agree_valid" required>
+        </div>
+        <div class="inputs ten">
+            <b class="r">Monthly Rent</b><br>
+            <input type="number" autocomplete="off " id="rentpm" required>
+        </div>
+        <div class="inputs eleven">
+            <b class="r">Security Deposit</b><br>
+            <input type="number" autocomplete="off" id="rentsd" required>
+        </div>
+        <div class="inputs twelve">
+            <b class="r">Rent Start From</b><br>
+            <input type="date" autocomplete="off" id="rent_sdate" required>
+        </div>
+    </div>
+        <a href="rentalfetch.html"><button type="submit" onclick="rental()"> Download Agreement </button></a>
+</body>
+</html>

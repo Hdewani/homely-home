@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #caf6bf;
+}
+.card2{
+    padding: 50px;
+    margin: 150px;
+    margin-top: 40px;
+    margin-left: 550px;
+    width: 350px;
+    height: 570px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.back{
+    text-align: left;
+}
+
+.back a{
+    text-decoration: none;
+    color: black;
+}
+.p{
+    color: #494848
+    /* color: black / white */
+}
+
+.card2 input[type="password"], input[type="tel"], input[type="text"]{
+    padding: 14px 40px;
+    border: 2px;
+    font-size: large;
+    /* color: black / white; */
+    /* border: 2px solid white; */
+}
+
+.card2 input[type="submit"]{
+    padding: 3px 30px;
+    /* border-radius: 20px; */
+    /* border: 3px solid green; */
+    background-color: green;
+    color: white;
+    font-size: large;
+}
+
+.card2 input[type="submit"]:hover{
+    background-color: green;
+}
+
+.card2 a{
+    text-decoration: none;
+    color: red;
+}

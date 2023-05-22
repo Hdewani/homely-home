@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 98.7%;
+    /* height: 100%; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #caf6bf;
+}
+
+fieldset{
+    width: 50%;
+    background-color: white;
+    padding: 30px;
+    font-size: larger;
+    border: 4px solid green;
+    /* padding-left: 100px; */
+}
+
+legend{
+    color: green;
+    font-size:x-large;
+    font-weight: 600;
+}
+.card1{
+    background-color: forestgreen;
+    /* height: 5%; */
+}
+.card7{
+    display: flex;
+}
+.item2{
+    padding-left: 250px;
+}
+
+.card5 p{
+    letter-spacing: 1px;
+}
+
+.card6 p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owner</title>
+    <link rel="stylesheet" href="owner.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="item1">
+                <br><br><br><br><br><br><br>
+                <h3>COMPLETE YOUR PROFILE</h3>
+                <P>Fill the required datas to flex your room/pg.</P><br>
+              <a href="oformmain.html">  <button type="submit">CLICK HERE</button> </a>
+            </div>
+
+            <div class="item2">
+                <br><br><br><br><br><br><br>
+                <h3>GENERATE MONEY RECEIPT</h3>
+                <P>Generate the money receipt of your roomer. </P><br>
+                <a href="recepite.html"><button type="submit">CLICK HERE</button></a>
+            </div>
+
+            <div class="item3">
+                <br><br><br><br><br><br><br>
+                <h3>GET YOUR UPDATES</h3>
+                <p>Get your updates here (Roomer's requests)</p><br>
+                <button type="submit">CLICK HERE</button>
+            </div>
+        </div>
+        <div class="grid2">
+            <div class="item4">
+                <img src="complete.png" alt="complete" width="100px" height="100px">
+            </div>
+            <div class="item5">
+                <img src="generate.png" alt="generate" width="100px" height="100px">
+            </div> 
+            <div class="item6">
+                <img src="update.png" alt="update" width="100px" height="100px">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        ScrollReveal({ 
+         reset: true ,
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+     });
+ 
+     ScrollReveal().reveal('.item1', { delay: 500, origin: 'bottom' });
+     ScrollReveal().reveal('.item2', { delay: 700, origin: 'bottom' });
+     ScrollReveal().reveal('.item3', { delay: 800, origin: 'bottom' });
+     ScrollReveal().reveal('.item4', { delay: 900, origin: 'top' });
+     ScrollReveal().reveal('.item5', { delay: 900, origin: 'top' });
+     ScrollReveal().reveal('.item6', { delay: 900, origin: 'top' });
+ 
+     </script>
+</body>
+</html>
